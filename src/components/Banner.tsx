@@ -1,4 +1,4 @@
-import { Grid, Container, Box, Button } from '@mui/material';
+import { Grid, Container, Box, Button, Typography } from '@mui/material';
 import BannerImg from '../assets/images/banner-img.png';
 import { useTheme } from '@mui/material/styles';
 import EmailIcon from '@mui/icons-material/Email';
@@ -22,18 +22,18 @@ const Banner = () => {
                   paddingTop: '140px',
                 }}
               >
-                <Box
-                  component="h1"
+                <Typography
+                  variant="h1"
                   sx={{
                     color: '#fff',
-                    fontSize: '2.7rem',
+
                     marginTop: 0,
                     marginBottom: '40px',
                   }}
                 >
                   Освой профессию <span className="TextGradientPrimary">буккипера</span>, <Box component="br" />
                   получай <span className="TextGradientPrimary">доход</span> с любой точки мира
-                </Box>
+                </Typography>
                 <Box
                   component="h3"
                   sx={{
