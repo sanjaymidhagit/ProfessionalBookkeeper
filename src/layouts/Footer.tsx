@@ -9,6 +9,7 @@ import MapMarkerIcon from '@mui/icons-material/Room';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import StraightIcon from '@mui/icons-material/Straight';
 
+
 const style = {
   fontSize:"16px",
   '@media (max-width: 1199px)': {
