@@ -58,6 +58,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
     paddingBottom:"16px",
     '@media (max-width: 1440px)': {
       fontSize:"15px",
+      maxWidth:"100%",
   },
     '@media (max-width: 1199px)': {
         fontSize:"14px",
@@ -136,7 +137,7 @@ export default function CustomizedAccordions() {
   return (
 <Box sx={{pt:2}}>
       <Container>
-      <Typography variant="h2" mb={6}>ЧАСТО ЗАДАВАЕМЫЕ <Box component="span" className="TextGradientPrimary">ВОПРОСЫ</Box></Typography>
+      <Typography variant="h2" mb={6}>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</Typography>
         <Box sx={{ pt: 4 }}>
           {accordionData.map((item) => (
             <Accordion key={item.id} expanded={expanded === item.id} onChange={handleChange(item.id)}>

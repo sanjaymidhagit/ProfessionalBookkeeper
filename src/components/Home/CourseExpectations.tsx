@@ -1,5 +1,6 @@
 import { Container, Grid, Paper, Typography , Box, Stack} from '@mui/material';
 import { experimentalStyled as styled } from '@mui/material/styles';
+import CourseBg from '../../assets/images/coursebg.jpg';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -12,21 +13,21 @@ const gridsection = {
   '& h2.MuiTypography-root' : {
     backgroundImage: "linear-gradient(137deg, rgba(65, 99, 92, 0.50) 0%, rgba(82, 129, 119, 0.50) 100%)",
     backgroundClip: "text",
-    fontSize: "169.936px",
+    fontSize: "169.936px !important",
     fontWeight: "700",
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent', 
     '@media (max-width:1440px)': {
-      fontSize:"150px"
+      fontSize:"150px !important"
     },
     '@media (max-width:1199px)': {
-      fontSize:"140px"
+      fontSize:"140px !important"
     },
     '@media (max-width:991px)': {
-      fontSize:"130px"
+      fontSize:"130px !important"
     },
     '@media (max-width:767px)': {
-      fontSize:"120px"
+      fontSize:"120px !important"
     },
   },
   '& h3.MuiTypography-root' :{
@@ -61,9 +62,9 @@ const gridsection = {
 }
 export default function ResponsiveGrid() {
   return (
-    <Container sx={{ marginTop: 4 }}>
-    <Typography variant="h2" mb={6}>ЧТО ВАС ЖДЕТ НА КУРСЕ?</Typography>
-    <Box sx={{ flexGrow: 1,backgroundImage: 'url("../../assets/images/coursebg.png")', padding: "50px  50px 0px 50px", borderRadius: "10px" }}>
+    <Container sx={{ marginTop: 5 }}>
+      <Typography variant="h2" mb={6}><Box component="span" className="TextGradientPrimary">ЧТО ВАС ЖДЕТ</Box> НА КУРСЕ?</Typography>
+    <Box sx={{ flexGrow: 1,backgroundImage: `url(${CourseBg})`, padding: "50px  50px 0px 50px", borderRadius: "10px" }}>
       <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} sx={gridsection}>
           <Grid item xs={12} md={6}>
             <Box>

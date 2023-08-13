@@ -68,8 +68,8 @@ const coursefees_grid = {
 };
 const CourseFees = () => {
   return (
-    <Container sx={{ marginTop: 4 }}>
-      <Typography variant="h2" mb={6}>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</Typography>
+    <Container sx={{ marginTop: 5 }}>
+      <Typography variant="h2" mb={6}><Box component="span" className="TextGradientPrimary">ТАРИФЫ </Box> КУРСА</Typography>
       <Grid container spacing={2} sx={{ py: 3 , alignItems:"end"}} >
         <Grid item xs={12} md={4} sx={coursefees_grid}>
           <Paper sx={{ p: 3, textAlign: 'center', color: 'text.secondary', background: "#fff" }}>
@@ -84,12 +84,12 @@ const CourseFees = () => {
             </List>
             <Box>
             <Typography component="span" sx={{fontWeight:"600",position:"relative",fontSize:{xs:"16px", md:"18px",
-             lg:"22px", xl:"24px",}}}><Box component="span" sx={{position:"absolute",left:"0",right:"0",
+             lg:"22px", xl:"24px",color:"#828282"}}}><Box component="span" sx={{position:"absolute",left:"0",right:"0",
           transform: 'rotate(15deg)',
           transformOrigin: 'top left',
           background: '#41635C', top: "3px",width:"100%",height:"3px",}}></Box>$650</Typography><br/>
             <Typography component="span" sx={{fontWeight:"600",fontSize:{xs:"16px", md:"18px",
-             lg:"22px", xl:"24px",}}}>$500</Typography>
+             lg:"22px", xl:"24px", color:"#828282"}}}>$500</Typography>
             </Box>
             <Button variant="contained">Приобрести</Button>
           </Paper>
@@ -110,12 +110,11 @@ const CourseFees = () => {
             </List>
             <Box>
             <Typography component="span" sx={{fontWeight:"600",position:"relative",fontSize:{xs:"16px", md:"18px",
-             lg:"22px", xl:"24px",}}}><Box component="span" sx={{position:"absolute",left:"0",right:"0",
+             lg:"22px", xl:"24px",color:"#828282"}}}><Box component="span" sx={{position:"absolute",left:"0",right:"0",
           transform: 'rotate(15deg)',
           transformOrigin: 'top left',
           background: '#41635C', top: "3px",width:"100%",height:"3px",}}></Box>$1050</Typography><br/>
-            <Typography component="span" sx={{fontWeight:"600",fontSize:{xs:"16px", md:"18px",
-             lg:"22px", xl:"24px",}}}>$850</Typography>
+            <Typography component="span" sx={{fontWeight:"600",fontSize:{color:"#828282"}}}>$850</Typography>
             </Box>
             <Button variant="contained">Приобрести</Button>
           </Paper>
@@ -136,7 +135,7 @@ const CourseFees = () => {
             </List>
             <Box>
             <Typography component="span" sx={{fontWeight:"600",fontSize:{xs:"16px", md:"18px",
-             lg:"22px", xl:"24px",}}}>$3000</Typography>
+             lg:"22px", xl:"24px", color:"#828282"}}}>$3000</Typography>
             </Box>
             <Button variant="contained">SOLD OUT</Button>
           </Paper>
