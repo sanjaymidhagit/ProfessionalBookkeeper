@@ -9,7 +9,6 @@ import MapMarkerIcon from '@mui/icons-material/Room';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import StraightIcon from '@mui/icons-material/Straight';
 
-
 const style = {
   fontSize:"16px",
   '@media (max-width: 1199px)': {
@@ -104,17 +103,17 @@ export default function Footer() {
           <Grid item xs={12} sm={4} md={3}>
           <Box display="flex" flexDirection="column" sx={{gap: {xs:"20px" , md:"40px", lg:"60px"}}}>
             <Link href="#" color="#fff" sx={{display:"flex" ,
-        alignItems:"center", fontSize:{xs:"15px", sm:"16px" , md:"18px", lg:"20px"}}}>
+        alignItems:"center", fontSize:{xs:"14px", sm:"15px" , md:"18px", lg:"20px"}}}>
               <EmailIcon sx={{color:"#41635C", mr:"8px"}} />
               advisory@go4profit.us
             </Link>
             <Link href="#" color="#fff" sx={{display:"flex" ,
-        alignItems:"center", fontSize:{xs:"15px", sm:"16px" , md:"18px", lg:"20px"}}}>
+        alignItems:"center", fontSize:{xs:"14px", sm:"15px" , md:"18px", lg:"20px"}}}>
               <MapMarkerIcon sx={{color:"#41635C",  mr:"8px"}} />
               США, штат Техас, г. Остин
             </Link>
             <Link href="#" color="#fff" sx={{display:"flex" ,
-        alignItems:"center", fontSize:{xs:"15px", sm:"16px" , md:"18px", lg:"20px"}}}>
+        alignItems:"center", fontSize:{xs:"14px", sm:"15px" , md:"18px", lg:"20px"}}}>
             <InstagramIcon sx={{color:"#41635C" , mr:"8px"}} />
             @ainura.finance
             </Link>

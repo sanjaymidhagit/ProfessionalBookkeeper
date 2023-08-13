@@ -34,7 +34,7 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
   '& .MuiAccordionSummary-content': {
     '& .MuiTypography-root': {
       fontSize: "25px",
-      maxWidth: "60%",
+      maxWidth: "100%",
       '@media (max-width: 1440px)': {
         fontSize: "23px",
       },
