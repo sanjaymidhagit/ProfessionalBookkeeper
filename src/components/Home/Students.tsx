@@ -1,7 +1,9 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
-import { Paper, Container, Grid, Box, Typography, Card } from '@mui/material';
-import SlideImage from '../assets/images/slider-img.png';
+import { Paper, Container, Grid, Box, Typography } from '@mui/material';
+import SlideImage from '../../assets/images/slider-img.png';
+import SlideImage2 from '../../assets/images/slider-img2.png';
+import SlideImage3 from '../../assets/images/slider-img2.png';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
@@ -38,7 +40,18 @@ const Students: React.FC = () => {
       description2Alpha: 'Б',
       description2:
         'Учится с утра до вечера в университете Нархоз. Очень хотел иметь свой заработок для достижения финансовой незавизимости и самостоятельности.',
-      image: SlideImage,
+      image: SlideImage2,
+    },
+    {
+      name: 'Мадина Талгабекова',
+      descriptionTitle: 'Точка',
+      descriptionAlbha: 'А',
+      description: 'В декрете, заработок 0',
+      description2Title: 'Точка',
+      description2Alpha: 'Б',
+      description2:
+        'Работает онлайн буккипером с Марта 2023 года. Зарплата $10.5/час, выходит в месяц $441. Тратит на работу 1-2 часа в день. Поскольку у Мадины еще есть свободное время, хочет найти еще больше клиентов.',
+      image: SlideImage3,
     },
   ];
 
@@ -47,7 +60,10 @@ const Students: React.FC = () => {
       <Grid container spacing={0} py={10}>
         <Grid item xs={12}>
           <Typography variant="h2" mb={5}>
-          <Box component="span" className="TextGradientPrimary">МОИ СТУДЕНТЫ</Box> КОТОРЫЕ УЖЕ
+            <Box component="span" className="TextGradientPrimary">
+              МОИ СТУДЕНТЫ
+            </Box>{' '}
+            КОТОРЫЕ УЖЕ
             <Box component="br" />
             ЗАРАБАТЫВАЮТ НА БУККИПИНГЕ
           </Typography>
@@ -94,65 +110,70 @@ const ItemComponent: React.FC<ItemComponentProps> = ({ item }) => {
         boxShadow: 'none',
       }}
     >
-      <Grid container spacing={5} alignItems="center">
+      <Grid container spacing={0} alignItems="center">
         <Grid item md={3}>
           <Box
             component="img"
             sx={{
               maxWidth: '100%',
               display: 'block',
-              margin: 'auto',
             }}
             src={item.image}
             alt={item.name}
           />
         </Grid>
         <Grid item md={8}>
-          <Typography variant="h2">{item.name}</Typography>
-          <p>
-            <Box
-              component="span"
-              sx={{
-                fontSize: '1.25rem',
-                fontWeight: 700,
-              }}
-            >
-              {item.descriptionTitle}
-            </Box>{' '}
-            <Box
-              component="span"
-              className="TextGradientPrimary"
-              sx={{
-                fontSize: '1.25rem',
-                fontWeight: 700,
-              }}
-            >
-              {item.descriptionAlbha}
-            </Box>{' '}
-            {item.description}
-          </p>
-          <p>
-            <Box
-              component="span"
-              sx={{
-                fontSize: '1.25rem',
-                fontWeight: 700,
-              }}
-            >
-              {item.description2Title}
-            </Box>{' '}
-            <Box
-              component="span"
-              className="TextGradientPrimary"
-              sx={{
-                fontSize: '1.25rem',
-                fontWeight: 700,
-              }}
-            >
-              {item.description2Alpha}
-            </Box>{' '}
-            {item.description2}
-          </p>
+          <Box
+            sx={{
+              marginLeft: '50px',
+            }}
+          >
+            <Typography variant="h2">{item.name}</Typography>
+            <p>
+              <Box
+                component="span"
+                sx={{
+                  fontSize: '1.25rem',
+                  fontWeight: 700,
+                }}
+              >
+                {item.descriptionTitle}
+              </Box>{' '}
+              <Box
+                component="span"
+                className="TextGradientPrimary"
+                sx={{
+                  fontSize: '1.25rem',
+                  fontWeight: 700,
+                }}
+              >
+                {item.descriptionAlbha}
+              </Box>{' '}
+              {item.description}
+            </p>
+            <p>
+              <Box
+                component="span"
+                sx={{
+                  fontSize: '1.25rem',
+                  fontWeight: 700,
+                }}
+              >
+                {item.description2Title}
+              </Box>{' '}
+              <Box
+                component="span"
+                className="TextGradientPrimary"
+                sx={{
+                  fontSize: '1.25rem',
+                  fontWeight: 700,
+                }}
+              >
+                {item.description2Alpha}
+              </Box>{' '}
+              {item.description2}
+            </p>
+          </Box>
         </Grid>
       </Grid>
     </Paper>

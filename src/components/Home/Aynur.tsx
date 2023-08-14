@@ -1,22 +1,27 @@
 import { Grid, Container, Box, Typography, Button } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import { useTheme } from '@mui/material/styles';
-import Qbo from '../assets/images/qbo-badge.png';
-import Qbo2 from '../assets/images/qbo-badge.png';
-import Gusto from '../assets/images/gusto-gold-partner.png';
-import Financial from '../assets/images/financial-analysis-badge.png';
-import Shopify from '../assets/images/shopify-partner.png';
-import Bbl from '../assets/images/bbl-badge.png';
-import AynurImage from '../assets/images/aynur-img.png';
-import AynurBg from '../assets/images/aynur-bg.jpg';
+import Qbo from '../../assets/images/qbo-badge.png';
+import Qbo2 from '../../assets/images/qbo-badge.png';
+import Gusto from '../../assets/images/gusto-gold-partner.png';
+import Financial from '../../assets/images/financial-analysis-badge.png';
+import Shopify from '../../assets/images/shopify-partner.png';
+import Bbl from '../../assets/images/bbl-badge.png';
+import AynurImage from '../../assets/images/aynur-img.png';
+import AynurBg from '../../assets/images/aynur-bg.jpg';
 
 const Aynur = () => {
   const theme = useTheme();
   return (
     <>
-          <Container sx={{marginTop:4}}>
-          <Typography variant="h2" mb={6}><Box component="span" className="TextGradientPrimary">КТО ПРОВОДИТ</Box> ОБУЧЕНИЕ?</Typography>
-          </Container>
+      <Container sx={{ marginTop: 4 }}>
+        <Typography variant="h2" mb={6}>
+          <Box component="span" className="TextGradientPrimary">
+            КТО ПРОВОДИТ
+          </Box>{' '}
+          ОБУЧЕНИЕ?
+        </Typography>
+      </Container>
       <Box
         sx={{
           backgroundImage: `url(${AynurBg})`,
@@ -24,7 +29,7 @@ const Aynur = () => {
           backgroundRepeat: 'no-repeat',
           paddingTop: '60px',
           display: 'flex',
-          flexWrap:"wrap"
+          flexWrap: 'wrap',
         }}
       >
         <Container maxWidth="lg">
@@ -67,7 +72,7 @@ const Aynur = () => {
                     backgroundColor: '#242524',
                     boxShadow: '-3px -2px 11px 0px rgba(109, 109, 109, 0.19), 2px 2px 12px 0px rgba(0, 0, 0, 0.34)',
                     display: 'flex',
-                    flexWrap:"wrap",
+                    flexWrap: 'wrap',
                     alignItems: 'center',
                     justifyContent: 'center',
                     marginLeft: 2,
@@ -81,7 +86,7 @@ const Aynur = () => {
                       borderRadius: '50%',
                       background: theme.palette.gradient.warning,
                       display: 'flex',
-                      flexWrap:"wrap",
+                      flexWrap: 'wrap',
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}
@@ -99,7 +104,7 @@ const Aynur = () => {
                 sx={{
                   display: 'flex',
                   alignItems: 'center',
-                  flexWrap:"wrap",
+                  flexWrap: 'wrap',
                   gap: 4,
                 }}
               >

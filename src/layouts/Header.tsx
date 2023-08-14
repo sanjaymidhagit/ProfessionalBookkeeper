@@ -8,7 +8,6 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import AdbIcon from '@mui/icons-material/Adb';
 import { ReactComponent as PhoneIcon } from '../assets/icons/phone-circle.svg';
 import { MenuItem } from '@mui/material';
 
@@ -35,7 +34,12 @@ function Header() {
       }}
     >
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar
+          disableGutters
+          sx={{
+            justifyContent: 'space-between',
+          }}
+        >
           <Typography
             noWrap
             component="a"
@@ -44,17 +48,17 @@ function Header() {
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontWeight: 700,
-              fontSize: '2rem',
+              fontSize: { xs: '1.2rem', sm: '1.3rem', xl: '2rem' },
               color: 'inherit',
               textDecoration: 'none',
             }}
-           >
+          >
             Професиональный
             <br />
             Буккипер
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -85,12 +89,19 @@ function Header() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography
+                    textAlign="center"
+                    sx={{
+                      color: 'black',
+                    }}
+                  >
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
+
           <Typography
             variant="h5"
             noWrap
@@ -99,9 +110,9 @@ function Header() {
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
+              flexGrow: 0,
               fontWeight: 700,
-              fontSize: {xs:'1.5rem', sm:"1.8rem",  lg:"2rem"},
+              fontSize: { xs: '1.5rem', sm: '1.8rem', lg: '2rem' },
               color: 'inherit',
               textDecoration: 'none',
             }}
@@ -115,7 +126,13 @@ function Header() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block', fontSize: '20px', textTransform: 'none' }}
+                sx={{
+                  my: 2,
+                  color: 'white',
+                  display: 'block',
+                  fontSize: { md: '16px', xl: '20px' },
+                  textTransform: 'none',
+                }}
               >
                 {page}
               </Button>
@@ -123,7 +140,10 @@ function Header() {
           </Box>
 
           <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center', gap: 1 }}>
-           <Box component="a"  href="tel:+4733378901"> <PhoneIcon /></Box>
+            <Box component="a" href="tel:+4733378901">
+              {' '}
+              <PhoneIcon />
+            </Box>
             <Typography
               component="a"
               href="tel:+4733378901"
@@ -132,7 +152,7 @@ function Header() {
                 fontSize: '24px',
                 color: 'inherit',
                 textDecoration: 'none',
-                display:{xs:"none" , md:"inline-block"}
+                display: { xs: 'none', md: 'inline-block' },
               }}
             >
               +1(917)-200-7609

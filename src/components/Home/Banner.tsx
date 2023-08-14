@@ -1,8 +1,8 @@
 import { Grid, Container, Box, Button, Typography } from '@mui/material';
-import BannerImg from '../assets/images/banner-img.png';
+import BannerImg from '../../assets/images/banner-img.png';
 import { useTheme } from '@mui/material/styles';
 import EmailIcon from '@mui/icons-material/Email';
-import { ReactComponent as BannerNeonText } from '../assets/images/banner-neon-text.svg';
+import { ReactComponent as BannerNeonText } from '../../assets/images/banner-neon-text.svg';
 
 const Banner = () => {
   const theme = useTheme();
@@ -12,6 +12,9 @@ const Banner = () => {
         sx={{
           background: 'linear-gradient(180deg, rgba(43, 44, 40, 0.00) 39.58%, #2B2C28 88.41%)',
           paddingBottom: '100px',
+          '@media(max-width:767px)': {
+            paddingBottom: 0,
+          },
         }}
       >
         <Container maxWidth="lg">
@@ -20,6 +23,9 @@ const Banner = () => {
               <Box
                 sx={{
                   paddingTop: '140px',
+                  '@media(max-width:767px)': {
+                    paddingTop: '80px',
+                  },
                 }}
               >
                 <Typography
@@ -136,6 +142,9 @@ const Banner = () => {
             marginTop: '-12%',
             '& svg': {
               width: '100%',
+            },
+            '@media(max-width:767px)': {
+              zIndex: 1,
             },
           }}
         >

@@ -58,7 +58,16 @@ export default function WhoIsThis() {
                 primary="Новичкам"
                 secondary={
                   <React.Fragment>
-                    <Typography sx={{ display: 'inline', fontSize: '1.25rem' }} component="span">
+                    <Typography
+                      sx={{
+                        display: 'inline',
+                        fontSize: '1.25rem',
+                        [theme.breakpoints.down('sm')]: {
+                          fontSize: '1rem',
+                        },
+                      }}
+                      component="span"
+                    >
                       Для тех, кто хочет освоить новую профессию, при этом с возможностью выбора работать на компанию
                       или на себя, оффлайн или онлайн. На курсе вы получите пошаговый план с нуля до получения первого
                       дохода.
@@ -69,6 +78,9 @@ export default function WhoIsThis() {
                   fontSize: '1.5rem',
                   fontWeight: 600,
                   marginBottom: '1.25rem',
+                  [theme.breakpoints.down('md')]: {
+                    fontSize: '1.2rem',
+                  },
                 }}
               />
             </ListItem>
@@ -109,7 +121,16 @@ export default function WhoIsThis() {
                 primary="Фрилансерам, которые хотят иметь дополнительный доход"
                 secondary={
                   <React.Fragment>
-                    <Typography sx={{ display: 'inline', fontSize: '1.25rem' }} component="span">
+                    <Typography
+                      sx={{
+                        display: 'inline',
+                        fontSize: '1.25rem',
+                        [theme.breakpoints.down('sm')]: {
+                          fontSize: '1rem',
+                        },
+                      }}
+                      component="span"
+                    >
                       Для тех, кто хочет получать стабильный доход и работать с постоянными клиентами из разных стран.
                     </Typography>
                   </React.Fragment>
@@ -158,7 +179,16 @@ export default function WhoIsThis() {
                 primary="Студентам, которые хотят быть финансово независимы"
                 secondary={
                   <React.Fragment>
-                    <Typography sx={{ display: 'inline', fontSize: '1.25rem' }} component="span">
+                    <Typography
+                      sx={{
+                        display: 'inline',
+                        fontSize: '1.25rem',
+                        [theme.breakpoints.down('sm')]: {
+                          fontSize: '1rem',
+                        },
+                      }}
+                      component="span"
+                    >
                       Для тех, кто хочет быть финансово независимы от своих родителей, возможность поработать с
                       иностранными компаниями, до окончания учебы в унивестите уже иметь опыт в сфере финансов.
                     </Typography>
@@ -222,7 +252,16 @@ export default function WhoIsThis() {
                 primary="Новичкам"
                 secondary={
                   <React.Fragment>
-                    <Typography sx={{ display: 'inline', fontSize: '1.25rem' }} component="span">
+                    <Typography
+                      sx={{
+                        display: 'inline',
+                        fontSize: '1.25rem',
+                        [theme.breakpoints.down('sm')]: {
+                          fontSize: '1rem',
+                        },
+                      }}
+                      component="span"
+                    >
                       Для тех, кто хочет освоить новую профессию, при этом с возможностью выбора работать на компанию
                       или на себя, оффлайн или онлайн. На курсе вы получите пошаговый план с нуля до получения первого
                       дохода.
@@ -273,7 +312,16 @@ export default function WhoIsThis() {
                 primary="Фрилансерам, которые хотят иметь дополнительный доход"
                 secondary={
                   <React.Fragment>
-                    <Typography sx={{ display: 'inline', fontSize: '1.25rem' }} component="span">
+                    <Typography
+                      sx={{
+                        display: 'inline',
+                        fontSize: '1.25rem',
+                        [theme.breakpoints.down('sm')]: {
+                          fontSize: '1rem',
+                        },
+                      }}
+                      component="span"
+                    >
                       Для тех, кто хочет получать стабильный доход и работать с постоянными клиентами из разных стран.
                     </Typography>
                   </React.Fragment>
@@ -322,7 +370,16 @@ export default function WhoIsThis() {
                 primary="Студентам, которые хотят быть финансово независимы"
                 secondary={
                   <React.Fragment>
-                    <Typography sx={{ display: 'inline', fontSize: '1.25rem' }} component="span">
+                    <Typography
+                      sx={{
+                        display: 'inline',
+                        fontSize: '1.25rem',
+                        [theme.breakpoints.down('sm')]: {
+                          fontSize: '1rem',
+                        },
+                      }}
+                      component="span"
+                    >
                       Для тех, кто хочет быть финансово независимы от своих родителей, возможность поработать с
                       иностранными компаниями, до окончания учебы в унивестите уже иметь опыт в сфере финансов.
                     </Typography>
