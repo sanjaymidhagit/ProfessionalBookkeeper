@@ -24,7 +24,7 @@ const Banner = () => {
                 sx={{
                   paddingTop: '140px',
                   '@media(max-width:767px)': {
-                    paddingTop: '80px',
+                    paddingTop: '40px',
                   },
                 }}
               >
