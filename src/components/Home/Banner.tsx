@@ -32,7 +32,6 @@ const Banner = () => {
                   variant="h1"
                   sx={{
                     color: '#fff',
-
                     marginTop: 0,
                     marginBottom: '40px',
                   }}
@@ -46,6 +45,11 @@ const Banner = () => {
                     color: '#fff',
                     fontSize: '1.5rem',
                     fontWeight: 500,
+                    '@media(max-width:767px)': {
+                      fontSize: '1.2rem',
+                      marginTop: '0px',
+                      marginBottom: '0',
+                    },
                   }}
                 >
                   С нуля за 2 месяца от{' '}
@@ -57,13 +61,17 @@ const Banner = () => {
                 <Button
                   variant="contained"
                   sx={{
-                    marginTop: '60px',
                     borderRadius: '500px',
                     fontSize: 22,
                     padding: '11px 28px',
                     background: 'linear-gradient(132deg, #232323 0%, rgba(35, 35, 35, 0.49) 100%)',
                     boxShadow:
                       '10px 9px 12px 0px rgba(3, 3, 3, 0.79) inset, 1px -1px 19px 0px rgba(133, 133, 133, 0.25) inset',
+                    '@media(max-width:767px)': {
+                      fontSize: 16,
+                      marginTop: '40px',
+                      padding: '11px 20px',
+                    },
                   }}
                 >
                   Оставить заявку

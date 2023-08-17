@@ -58,6 +58,9 @@ const gridsection = {
       marginTop: '-90px',
       paddingLeft: '70px',
     },
+    '@media (max-width:767px)': {
+      paddingLeft: '0px',
+    },
   },
 };
 export default function ResponsiveGrid() {
@@ -70,7 +73,13 @@ export default function ResponsiveGrid() {
         НА КУРСЕ?
       </Typography>
       <Box
-        sx={{ flexGrow: 1, backgroundImage: `url(${CourseBg})`, padding: '50px  50px 0px 50px', borderRadius: '10px' }}
+        sx={{
+          flexGrow: 1,
+          backgroundImage: `url(${CourseBg})`,
+          backgroundSize: 'cover',
+          padding: '50px  50px 50px 50px',
+          borderRadius: '10px',
+        }}
       >
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} sx={gridsection}>
           <Grid item xs={12} md={6}>

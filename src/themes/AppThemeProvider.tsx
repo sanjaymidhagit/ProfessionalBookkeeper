@@ -126,6 +126,9 @@ export const AppThemeProvider: React.FC<Props> = ({ children }) => {
           '@media (max-width:1200px)': {
             fontSize: '2rem !important',
           },
+          '@media (max-width:767px)': {
+            fontSize: '1.5rem !important',
+          },
         },
         h2: {
           fontSize: '2.188rem',
@@ -133,12 +136,18 @@ export const AppThemeProvider: React.FC<Props> = ({ children }) => {
           '@media (max-width:1200px)': {
             fontSize: '1.5rem !important',
           },
+          '@media (max-width:767px)': {
+            fontSize: '1.2rem !important',
+          },
         },
       },
 
       components: {
         MuiCssBaseline: {
           styleOverrides: {
+            html: {
+              scrollBehavior: 'smooth',
+            },
             body: {
               backgroundColor: '#2B2C28',
               color: '#fff',

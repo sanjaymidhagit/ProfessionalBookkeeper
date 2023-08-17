@@ -68,7 +68,7 @@ const coursefees_grid = {
 };
 const CourseFees = () => {
   return (
-    <Container sx={{ py: 10 }}>
+    <Container id="tariffs" sx={{ pt: 10 }}>
       <Typography variant="h2" mb={6}>
         <Box component="span" className="TextGradientPrimary">
           ТАРИФЫ{' '}

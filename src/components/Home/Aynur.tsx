@@ -14,7 +14,7 @@ const Aynur = () => {
   const theme = useTheme();
   return (
     <>
-      <Container sx={{ marginTop: 4 }}>
+      <Container id="about" sx={{ pt: 10 }}>
         <Typography variant="h2" mb={6}>
           <Box component="span" className="TextGradientPrimary">
             КТО ПРОВОДИТ
